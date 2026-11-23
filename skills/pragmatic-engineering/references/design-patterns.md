@@ -13,3 +13,5 @@ Prefer classical object-oriented implementations when justified. Prefer composit
 - Specification: reusable composable rules.
 - State: complex transitions.
 - Command Bus: only when dispatch requirements justify it.
+
+Rules express named business conditions; Specification is appropriate only when composition or reuse of predicates warrants it, Policy when a business decision warrants encapsulation. Prefer cohesive static guard/rule classes for related reusable checks. No mandatory base Rule, registry, chain or generic validation engine.

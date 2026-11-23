@@ -1,2 +1,4 @@
 # domain
 Entities own behavior and invariants. Choose construction according to complexity. Use public readonly fields for immutable public values; private `_name` and native getters for mutable internal state. Value Objects must represent real concepts with meaningful equality or validation. Domain services only when behavior belongs to no entity or value object. No ORM, HTTP or framework imports. Prefer composition; justify inheritance. Avoid boilerplate base entities. Preserve monetary precision and state transitions.
+
+Prefer cohesive `<concept>Guard.ts` for repeated or distracting invariant enforcement and `<concept>Rules.ts` for meaningful reusable business predicates. The entity remains responsible for invoking guards before mutation; a Value Object owns its own invariants. Rules are pure where possible and guards throw typed domain errors. See [guards and rules](guards-and-rules.md).

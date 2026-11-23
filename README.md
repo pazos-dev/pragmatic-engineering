@@ -6,3 +6,6 @@ Copia AGENTS.md y skills/ a la raíz de tu proyecto; fusiona instrucciones exist
 Para Node ESM usa type: module y un tsconfig.json que extienda tsconfig.base.json. NodeNext requiere extensiones .js en imports relativos emitidos. Para Vite adapta moduleResolution.
 Ejecuta pnpm exec vitest related --run src/ruta.ts y añade pruebas de integración afectadas explícitamente. No se garantiza detectar vínculos dinámicos.
 La revisión semántica es obligatoria: lint no detecta toda sobreingeniería. Las configuraciones son plantillas y no han sido ejecutadas contra un proyecto real.
+
+## Guards y Rules
+La skill incluye una guía para separar validaciones reutilizables, reglas de negocio, especificaciones y políticas sin prohibir los if sencillos. Véase [Guards and Rules](skills/pragmatic-engineering/references/guards-and-rules.md).

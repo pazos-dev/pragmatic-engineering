@@ -1,2 +1,4 @@
 # Pragmatic Engineering v3.0
 Apply `skills/pragmatic-engineering/SKILL.md` to all coding tasks. Read the relevant reference before editing. Inspect existing code and instructions first. Prefer the smallest complete solution, preserving correctness and existing contracts. Ask before new dependencies, public contract changes, database schema changes, major refactors or architectural changes. Small related improvements are permitted. Run affected tests; report what was actually verified. Never silently weaken safeguards. Use Spanish test descriptions and a brief final summary. Fix violations or request an explicit exception.
+
+For validation and conditional-heavy flows, read the guards-and-rules reference. Prefer cohesive domain guards and reusable named business rules over repeated inline conditions; retain simple local if statements when extraction adds no value.

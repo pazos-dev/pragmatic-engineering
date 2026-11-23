@@ -21,3 +21,6 @@ description: Implement, design, refactor and review software with pragmatic arch
 - [testing](references/testing.md)
 - [anti-patterns](references/anti-patterns.md)
 - [review-checklist](references/review-checklist.md)
+
+- [guards and rules](references/guards-and-rules.md)
+Read this reference before implementing domain validations or conditional-heavy business flows. Prefer cohesive guards and named reusable rules; never extract solely to conceal if statements.

@@ -14,3 +14,9 @@
 - [ ] Update documentation for relevant contract/behavior changes.
 - [ ] Correct violations or request explicit exception.
 Final response: brief changes, decisions, tests and limitations.
+
+## Guards and rules review
+- [ ] Conditional-heavy flows remain readable; repeated rules are centralized in their owning concept.
+- [ ] Guards reuse existing rules and throw correct layer-specific errors; no duplicated predicates or trivial wrapper chains.
+- [ ] Rules do not mutate state or hide I/O; validation precedes mutation; transaction and database invariants remain protected.
+- [ ] No unnecessary rule engine, specification framework or blanket ban on if statements.
